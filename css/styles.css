@@ -130,7 +130,7 @@ button {
 	line-height: 1.5;
 	/* 150% */
 	letter-spacing: 0.02em;
-	color: var(--NAVY-BLUE, #2E2F42)
+	color: var(--NAVY-BLUE, #2E2F42);
 }
 
 .menu-link:hover {
@@ -146,6 +146,10 @@ button {
 /* =============ADRESS=============== */
 .main-adress {
 	font-style: normal;
+}
+
+.main-adress-item {
+	padding: 24px 0;
 }
 
 .main-adress-list {
