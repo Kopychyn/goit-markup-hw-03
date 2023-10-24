@@ -84,6 +84,7 @@ button {
 	text-transform: uppercase;
 	color: var(--IRIS, #4D5AE5);
 	margin-right: 76px;
+	padding: 24px 0;
 }
 
 .logotype-studio {
@@ -100,7 +101,6 @@ button {
 
 /* ==========HEADER============ */
 .main-header {
-
 	border-bottom: 1px solid #e7e9fc;
 }
 
