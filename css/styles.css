@@ -80,6 +80,7 @@ button {
 	text-transform: uppercase;
 	color: var(--IRIS, #4D5AE5);
 	margin-right: 76px;
+
 }
 
 .logotype-studio {
@@ -123,6 +124,7 @@ button {
 	/* 150% */
 	letter-spacing: 0.02em;
 	color: var(--NAVY-BLUE, #2E2F42);
+	padding: 24px 0;
 }
 
 .menu-link:hover {
@@ -151,6 +153,7 @@ button {
 	/* 150% */
 	letter-spacing: 0.02em;
 	color: #434455;
+	padding: 24px 0;
 }
 
 .main-adress-link:hover {
