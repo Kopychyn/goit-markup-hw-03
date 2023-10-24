@@ -98,23 +98,26 @@ button {
 
 /* ==========HEADER============ */
 .main-header {
-	padding-top: 24px;
-	padding-bottom: 24px;
+
+	border-bottom: 1px solid #e7e9fc;
 }
 
 .main-navigations {
 	display: flex;
+	align-items: center;
 }
 
 .main-header-box {
 	display: flex;
 	justify-content: space-between;
+	padding-top: 24px;
+	padding-bottom: 24px;
 }
 
 /* =============MENU=============== */
 .menu {
 	display: flex;
-	column-gap: 40px;
+	gap: 40px;
 }
 
 .menu-link {
@@ -143,7 +146,7 @@ button {
 
 .main-adress-list {
 	display: flex;
-	column-gap: 40px;
+	gap: 40px;
 }
 
 .main-adress-link {
@@ -176,7 +179,7 @@ button {
 	align-items: center;
 	justify-content: center;
 	gap: 40px;
-	padding-top: 203px;
+	padding-top: 188px;
 	padding-bottom: 188px;
 
 }
@@ -188,7 +191,7 @@ button {
 	/* 107.143% */
 	letter-spacing: 0.02em;
 	color: var(--WHITE, #FFFFFF);
-	width: 496px;
+	max-width: 496px;
 }
 
 .main-herro-button {
@@ -199,9 +202,11 @@ button {
 	letter-spacing: 0.04em;
 	color: var(--WHITE, #FFFFFF);
 	background-color: #4D5AE5;
-	width: 169px;
+	min-width: 169px;
 	height: 56px;
+	border: none;
 	border-radius: 4px;
+
 }
 
 .main-herro-button:hover {
@@ -215,11 +220,14 @@ button {
 /* =============/HERRO=============== */
 
 /* ============ABAUT US================ */
+.about-us-section {
+	padding-top: 120px;
+	padding-bottom: 120px;
+}
+
 .about-us-list {
 	display: flex;
 	gap: 24px;
-	padding-bottom: 120px;
-	padding-top: 120px;
 }
 
 .about-us-content {
@@ -229,7 +237,8 @@ button {
 	/* 120% */
 	letter-spacing: 0.02em;
 	color: var(--NAVY-BLUE, #2E2F42);
-	padding-bottom: 8px;
+	width: calc((100% - 72px) / 4);
+	margin-bottom: 8px;
 }
 
 .about-us-content-text {
@@ -245,20 +254,20 @@ button {
 /* =============OUR TEAM=============== */
 .team-section {
 	background: var(--CLOUD, #F4F4FD);
+	padding-top: 120px;
+	padding-bottom: 120px;
 }
 
 .team-box {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	padding-top: 120px;
-	padding-bottom: 120px;
+
 }
 
 .team-list {
 	display: flex;
 	gap: 24px;
-	padding-top: 72px;
 	flex-wrap: wrap;
 }
 
@@ -270,6 +279,11 @@ button {
 	letter-spacing: 0.02em;
 	text-transform: capitalize;
 	color: var(--NAVY-BLUE, #2E2F42);
+	margin-bottom: 72px;
+}
+
+.team-item-content-box {
+	padding: 32px 0
 }
 
 .team-item {
@@ -277,6 +291,7 @@ button {
 	flex-direction: column;
 	gap: 8px;
 	background-color: #FFFFFF;
+	border-radius: 0px 0px 4px 4px;
 }
 
 .team-item-content {
@@ -287,7 +302,7 @@ button {
 	/* 120% */
 	letter-spacing: 0.02em;
 	color: var(--NAVY-BLUE, #2E2F42);
-	padding-top: 32px;
+	margin-bottom: 8px
 }
 
 .team-item-text {
@@ -297,25 +312,22 @@ button {
 	/* 150% */
 	letter-spacing: 0.02em;
 	color: var(--SLATE, #434455);
-	padding-bottom: 32px;
+
 }
 
 /* =============/OUR TEAM=============== */
 
 /* =============PORTFOLIO=============== */
-.portfolio-box {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
+.main-portfolio {
 	padding-top: 120px;
 	padding-bottom: 120px;
 }
 
-.portfolio-list {
+.portfolio-box {
 	display: flex;
-	gap: 24px;
-	padding-top: 72px;
-	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: center;
+
 }
 
 .main-portfolio-conternt {
@@ -326,6 +338,19 @@ button {
 	letter-spacing: 0.02em;
 	text-transform: capitalize;
 	color: var(--NAVY-BLUE, #2E2F42);
+	margin-bottom: 72px;
+}
+
+.portfolio-list {
+	display: flex;
+	row-gap: 48px;
+	flex-wrap: wrap;
+}
+
+.portfolio-item-box {
+	padding: 32px 16px;
+	border: 1px solid #e7e9fc;
+	border-top: none;
 }
 
 .portfolio-item-content {
@@ -335,9 +360,7 @@ button {
 	/* 120% */
 	letter-spacing: 0.02em;
 	color: var(--NAVY-BLUE, #2E2F42);
-	padding-top: 32px;
-	padding-right: 16px;
-	padding-left: 16px;
+	border-top: none;
 }
 
 .portfolio-item-text {
@@ -346,21 +369,18 @@ button {
 	/* 150% */
 	letter-spacing: 0.02em;
 	color: var(--SLATE, #434455);
-	padding-bottom: 32px;
-	padding-right: 16px;
-	padding-left: 16px;
 }
 
 /* =============/PORTFOLIO=============== */
 
 /* =============FOOTER=============== */
 .footer-box {
-	display: flex;
+	/* display: flex;
 	flex-direction: column;
 	align-items: flex-start;
 	justify-content: center;
-	gap: 17.5px;
-	padding-top: 101.5px;
+	gap: 17.5px; */
+	padding-top: 100px;
 	padding-bottom: 100px;
 }
 
@@ -377,6 +397,8 @@ button {
 	letter-spacing: 0.03em;
 	text-transform: uppercase;
 	color: var(--IRIS, #4D5AE5);
+	display: inline-block;
+	margin-bottom: 16px;
 }
 
 .logotype-footer-studio {
