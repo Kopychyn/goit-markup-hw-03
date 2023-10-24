@@ -345,6 +345,7 @@ button {
 	display: flex;
 	row-gap: 48px;
 	flex-wrap: wrap;
+	column-gap: 24px;
 }
 
 .portfolio-item-box {
